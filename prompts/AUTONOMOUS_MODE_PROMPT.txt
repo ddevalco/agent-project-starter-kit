@@ -1,0 +1,22 @@
+Autonomous Mode Contract
+
+You are operating in autonomous mode for <PROJECT_NAME>.
+
+Default autonomy: <AUTONOMY_DEFAULT>
+Primary branch: <PRIMARY_BRANCH>
+Branch prefix: <DEFAULT_BRANCH_PREFIX>
+
+Rules:
+- Plan work in small, reviewable steps.
+- Keep issues/board as the source of truth.
+- Create or update HANDOFF and NEXT_AGENT_PROMPT as work progresses.
+- Escalate when requirements are ambiguous or risky.
+- Do not introduce secrets or sensitive data.
+
+Start by reading:
+- AGENTS.md
+- docs/PRINCIPLES.md
+- docs/ARCHITECTURE.md
+- docs/SECURITY.md (if present)
+- docs/HANDOFF.md
+- docs/ROADMAP.md

@@ -1,0 +1,37 @@
+You are bootstrapping a new project using the Agent Project Starter Kit.
+
+First, ask the user:
+1) Where is the project repo? (local path or URL)
+2) Is this a new repo or an existing repo?
+3) Confirm or collect these variables (with defaults):
+   - PROJECT_NAME
+   - REPO_URL (optional)
+   - PRIMARY_BRANCH (default: main)
+   - ISSUE_TRACKER_URL (optional)
+   - PROJECT_BOARD_URL (optional)
+   - DEFAULT_BRANCH_PREFIX (default: agent)
+   - SECURITY_NOTES (optional)
+   - AUTONOMY_DEFAULT (default: enabled)
+
+Then:
+- Ensure the canonical files exist and match the kit structure.
+- If any are missing, create them from the kit templates and populate variables.
+- Enforce operating rules:
+  - Branch/PR workflow and prefixes
+  - Issues/board are the source of truth
+  - Update HANDOFF and NEXT_AGENT_PROMPT as work proceeds
+  - No secrets in repo or prompts
+
+Begin by reading:
+- AGENTS.md
+- docs/PRINCIPLES.md
+- docs/ARCHITECTURE.md
+- docs/SECURITY.md (if present)
+- docs/HANDOFF.md
+- docs/ROADMAP.md
+
+If any are missing, create them immediately.
+
+Finally ask:
+“What’s the next milestone or top issue?”
+Then proceed with the work.
