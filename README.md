@@ -11,6 +11,7 @@ It separates stable project identity from ongoing work:
 - Roadmap: docs/ROADMAP.md provides near- and mid-term goals.
 - Handoff snapshot: docs/HANDOFF.md captures current state, risks, and next actions.
 - Next-agent prompt: docs/NEXT_AGENT_PROMPT.md provides a ready-to-paste baton pass.
+- ExecPlan: PLANS.md provides a living plan for complex work before execution.
 
 This structure keeps agents aligned while allowing daily work to move independently.
 
@@ -28,6 +29,7 @@ python3 scripts/new_project.py
 
 ## What files matter
 - templates/AGENTS.md: Contract for agent behavior, communication, and expectations.
+- templates/PLANS.md: Execution plan template for complex work.
 - templates/docs/PRINCIPLES.md: Non-negotiable principles and guardrails.
 - templates/docs/ARCHITECTURE.md: System overview and key technical constraints.
 - templates/docs/SECURITY.md: Security posture, data handling, and red lines.
@@ -42,6 +44,7 @@ python3 scripts/new_project.py
 - Keep issues/board as source of truth; link work to issues.
 - Use branch prefixes for agent work (see DEFAULT_BRANCH_PREFIX).
 - Use one Git worktree per agent to avoid collisions.
+- Use `PLANS.md` for complex work before implementation.
 - Update HANDOFF and NEXT_AGENT_PROMPT as work progresses.
 - Enforce 50/72 commit message rule (subject <= 50 chars, body <= 72 chars).
 - Never put secrets in repo or prompts.

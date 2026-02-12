@@ -20,6 +20,11 @@
 - Use <DEFAULT_BRANCH_PREFIX>/short-description for branches.
 - Use one Git worktree per agent when working concurrently. See docs/WORKTREES.md.
 
+## Planning protocol
+- For complex work, create or update `PLANS.md` before implementation.
+- Confirm the plan with the human before executing.
+- Keep `PLANS.md` updated as work progresses.
+
 ## Commit messages (50/72 rule)
 - Subject line <= 50 characters, imperative mood, no period.
 - Blank line between subject and body.

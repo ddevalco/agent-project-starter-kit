@@ -16,6 +16,7 @@ First, ask the user:
 Then:
 - Ensure the canonical files exist and match the kit structure.
 - If any are missing, create them from the kit templates and populate variables.
+- Ask if the work is complex enough to require an ExecPlan. If yes, create/update `PLANS.md` before implementation.
 - Enforce operating rules:
   - Branch/PR workflow and prefixes
   - Issues/board are the source of truth
@@ -26,6 +27,7 @@ Then:
 
 Begin by reading:
 - AGENTS.md
+- PLANS.md (if present)
 - docs/PRINCIPLES.md
 - docs/ARCHITECTURE.md
 - docs/SECURITY.md (if present)
