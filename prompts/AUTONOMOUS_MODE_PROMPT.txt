@@ -9,6 +9,8 @@ Branch prefix: <DEFAULT_BRANCH_PREFIX>
 Rules:
 - Plan work in small, reviewable steps.
 - Keep issues/board as the source of truth.
+- Use one Git worktree per agent when working concurrently.
+- Follow the 50/72 commit message rule.
 - Create or update HANDOFF and NEXT_AGENT_PROMPT as work progresses.
 - Escalate when requirements are ambiguous or risky.
 - Do not introduce secrets or sensitive data.

@@ -19,6 +19,8 @@ Then:
 - Enforce operating rules:
   - Branch/PR workflow and prefixes
   - Issues/board are the source of truth
+  - One worktree per agent when running concurrently
+  - 50/72 commit message rule
   - Update HANDOFF and NEXT_AGENT_PROMPT as work proceeds
   - No secrets in repo or prompts
 

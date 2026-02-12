@@ -40,12 +40,36 @@ python3 scripts/new_project.py
 ## Operating rules
 - Keep issues/board as source of truth; link work to issues.
 - Use branch prefixes for agent work (see DEFAULT_BRANCH_PREFIX).
+- Use one Git worktree per agent to avoid collisions.
 - Update HANDOFF and NEXT_AGENT_PROMPT as work progresses.
+- Enforce 50/72 commit message rule (subject <= 50 chars, body <= 72 chars).
 - Never put secrets in repo or prompts.
 - Keep principles/architecture separate from roadmap and handoff status.
+
+## Parallel agents with Git worktrees
+Git worktrees let you attach multiple working directories to the same repo, each
+on its own branch. This avoids stashing/switching and keeps concurrent agents
+from colliding.
+
+Example:
+```bash
+# From repo root
+
+git worktree add ../<PROJECT_SLUG>-agent-1 -b <DEFAULT_BRANCH_PREFIX>/agent-1
+
+git worktree add ../<PROJECT_SLUG>-agent-2 -b <DEFAULT_BRANCH_PREFIX>/agent-2
+```
+
+Now you have:
+- <PROJECT_SLUG> (main)
+- <PROJECT_SLUG>-agent-1 (agent-1 branch)
+- <PROJECT_SLUG>-agent-2 (agent-2 branch)
+
+Each agent works in its own worktree and opens its own PR.
 
 ## Common mistakes
 - Stale HANDOFF or NEXT_AGENT_PROMPT after significant changes.
 - Mixing principles with roadmap or sprint tasks.
 - Committing secrets or credentials.
 - Skipping issue linkage for work items.
+- Multiple agents working in the same worktree.

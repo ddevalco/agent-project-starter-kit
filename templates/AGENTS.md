@@ -18,6 +18,13 @@
 - Prefer small, reviewable changes.
 - Document non-obvious decisions.
 - Use <DEFAULT_BRANCH_PREFIX>/short-description for branches.
+- Use one Git worktree per agent when working concurrently.
+
+## Commit messages (50/72 rule)
+- Subject line <= 50 characters, imperative mood, no period.
+- Blank line between subject and body.
+- Body lines <= 72 characters, hard-wrapped.
+- Explain why and what; reference issues if available.
 
 ## Autonomy
 Default autonomy: <AUTONOMY_DEFAULT>
