@@ -60,6 +60,7 @@ def main():
 
     variables = {
         "PROJECT_NAME": project_name,
+        "PROJECT_SLUG": slug,
         "REPO_URL": repo_url,
         "PRIMARY_BRANCH": primary_branch,
         "ISSUE_TRACKER_URL": issue_tracker_url,
