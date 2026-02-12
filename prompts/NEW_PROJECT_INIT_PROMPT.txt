@@ -19,7 +19,7 @@ Then:
 - Enforce operating rules:
   - Branch/PR workflow and prefixes
   - Issues/board are the source of truth
-  - One worktree per agent when running concurrently
+  - One worktree per agent when running concurrently (see docs/WORKTREES.md)
   - 50/72 commit message rule
   - Update HANDOFF and NEXT_AGENT_PROMPT as work proceeds
   - No secrets in repo or prompts
@@ -31,6 +31,7 @@ Begin by reading:
 - docs/SECURITY.md (if present)
 - docs/HANDOFF.md
 - docs/ROADMAP.md
+- docs/WORKTREES.md
 
 If any are missing, create them immediately.
 

@@ -34,6 +34,7 @@ python3 scripts/new_project.py
 - templates/docs/ROADMAP.md: Planned milestones and delivery order.
 - templates/docs/HANDOFF.md: Current snapshot for fast re-entry.
 - templates/docs/NEXT_AGENT_PROMPT.md: Ready prompt for the next agent.
+- templates/docs/WORKTREES.md: Parallel agent workflow using Git worktrees.
 - prompts/NEW_PROJECT_INIT_PROMPT.txt: Instructions for a fresh Codex thread.
 - prompts/AUTONOMOUS_MODE_PROMPT.txt: The autonomous operating contract.
 

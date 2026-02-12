@@ -4,7 +4,7 @@
 - Protect user data and system integrity.
 - Prefer clarity over cleverness.
 - Keep changes small and reversible.
-- Use one Git worktree per agent when working concurrently.
+- Use one Git worktree per agent when working concurrently. See docs/WORKTREES.md.
 - Follow the 50/72 commit message rule.
 
 ## Decision rules

@@ -18,7 +18,7 @@
 - Prefer small, reviewable changes.
 - Document non-obvious decisions.
 - Use <DEFAULT_BRANCH_PREFIX>/short-description for branches.
-- Use one Git worktree per agent when working concurrently.
+- Use one Git worktree per agent when working concurrently. See docs/WORKTREES.md.
 
 ## Commit messages (50/72 rule)
 - Subject line <= 50 characters, imperative mood, no period.
