@@ -1,10 +1,13 @@
 # Agent Project Starter Kit
 
 ## What this is
+
 A minimal, opinionated starter kit for consistent agent bootstrapping, handoffs, and autonomous execution across projects.
 
 ## Why it works
+
 It separates stable project identity from ongoing work:
+
 - Identity and contract: AGENTS.md defines how agents should collaborate with humans.
 - Principles: docs/PRINCIPLES.md explains non-negotiables and decision boundaries.
 - Architecture: docs/ARCHITECTURE.md captures system shape and key constraints.
@@ -16,6 +19,7 @@ It separates stable project identity from ongoing work:
 This structure keeps agents aligned while allowing daily work to move independently.
 
 ## How to use (coworker quickstart)
+
 1. Clone this repo.
 2. Run the generator script.
 3. Create/push your new project repo.
@@ -23,11 +27,13 @@ This structure keeps agents aligned while allowing daily work to move independen
 5. Codex reads the canonical files and operates consistently.
 
 Quickstart:
+
 ```bash
 python3 scripts/new_project.py
 ```
 
 ## What files matter
+
 - templates/AGENTS.md: Contract for agent behavior, communication, and expectations.
 - templates/PLANS.md: Execution plan template for complex work.
 - templates/docs/PRINCIPLES.md: Non-negotiable principles and guardrails.
@@ -41,6 +47,7 @@ python3 scripts/new_project.py
 - prompts/AUTONOMOUS_MODE_PROMPT.txt: The autonomous operating contract.
 
 ## Operating rules
+
 - Keep issues/board as source of truth; link work to issues.
 - Use branch prefixes for agent work (see DEFAULT_BRANCH_PREFIX).
 - Use one Git worktree per agent to avoid collisions.
@@ -51,11 +58,13 @@ python3 scripts/new_project.py
 - Keep principles/architecture separate from roadmap and handoff status.
 
 ## Parallel agents with Git worktrees
+
 Git worktrees let you attach multiple working directories to the same repo, each
 on its own branch. This avoids stashing/switching and keeps concurrent agents
 from colliding.
 
 Example:
+
 ```bash
 # From repo root
 
@@ -65,6 +74,7 @@ git worktree add ../<PROJECT_SLUG>-agent-2 -b <DEFAULT_BRANCH_PREFIX>/agent-2
 ```
 
 Now you have:
+
 - <PROJECT_SLUG> (main)
 - <PROJECT_SLUG>-agent-1 (agent-1 branch)
 - <PROJECT_SLUG>-agent-2 (agent-2 branch)
@@ -72,6 +82,7 @@ Now you have:
 Each agent works in its own worktree and opens its own PR.
 
 ## Common mistakes
+
 - Stale HANDOFF or NEXT_AGENT_PROMPT after significant changes.
 - Mixing principles with roadmap or sprint tasks.
 - Committing secrets or credentials.

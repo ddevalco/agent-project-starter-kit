@@ -1,0 +1,10 @@
+{
+  "config": {
+    "extends": "../devops-agent-orchestra/.markdownlint.json"
+  },
+  "ignores": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**"
+  ]
+}

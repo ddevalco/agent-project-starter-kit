@@ -1,6 +1,7 @@
 # Generator
 
 Usage:
+
 ```bash
 python3 scripts/new_project.py
 ```
